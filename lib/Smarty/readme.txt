@@ -1,0 +1,1 @@
+download Smarty from http://www.smarty.net/download
