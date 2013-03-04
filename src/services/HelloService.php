@@ -16,7 +16,7 @@ class HelloService extends BaseResource {
 	 */
 	function hello() {
 		$log = $this->container['log'];
-		$log->addDebug($this->getLoggedUsername.' executing '.get_class($this).'.'.__FUNCTION__.'() '.$_SERVER['REQUEST_URI'], array("GET"=>$_GET, "POST"=>$_POST));
+		$log->addDebug($this->getLoggedUsername().' executing '.get_class($this).'.'.__FUNCTION__.'() '.$_SERVER['REQUEST_URI'], array("GET"=>$_GET, "POST"=>$_POST));
 				
 		return new Response(200, array( "hello"=>"world!" ) );
 	}

@@ -14,7 +14,7 @@ class HelloApp extends BaseResource {
 	function hello() {
 		$smarty = $this->container['smarty'];
 		$log = $this->container['log'];
-		$log->addDebug($this->getLoggedUsername.' executing '.get_class($this).'.'.__FUNCTION__.'() '.$_SERVER['REQUEST_URI'], array("GET"=>$_GET, "POST"=>$_POST));
+		$log->addDebug($this->getLoggedUsername().' executing '.get_class($this).'.'.__FUNCTION__.'() '.$_SERVER['REQUEST_URI'], array("GET"=>$_GET, "POST"=>$_POST));
 		
 		$smarty->assign('hello', "Hello world!");
 		
