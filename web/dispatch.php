@@ -46,6 +46,8 @@ $container['database'] = function($c) {
 	return $db;
 };
 
+include_once '../src/BaseResource.php';
+
 $config = array(
     'load' => array(
     	  '../src/webapp/*',
