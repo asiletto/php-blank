@@ -3,9 +3,6 @@ php-blank
 
 php minimal blank application with Tonic, Pimple, Smarty, Monolog, Mongodb
 
-Setup
-=========
-
 Monolog
 --------
 Monolog is a logging framework. Monolog implements Psr interfaces.
@@ -39,3 +36,7 @@ Apache mount point
 --------
 
 The app will be mounted on the folder /web which includes only a dispatcher to Tonic controllers and a .htaccess to rewrite urls. This folder will include also static resources as javascripts, css, images.
+
+Test
+--------
+The app exposes two resources, /hello which is an html page generated with smarty and /services/hello which is a simple REST authenticated web service
