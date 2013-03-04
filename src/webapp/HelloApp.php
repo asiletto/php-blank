@@ -1,7 +1,7 @@
 <?php
 
 use Tonic\UnauthorizedException;
-
+use Tonic\Response;
 /**
  * @uri /hello
  * 
