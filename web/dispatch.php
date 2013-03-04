@@ -14,7 +14,7 @@ $container['log_logformat'] = "[%datetime%] %channel%.%level_name%: %message% %c
 $container['log_file'] = "/tmp/application.log";
 $container['log_appender'] = "appname";
 // smarty configuration
-$container['smarty_template_dir'] = '../views';
+$container['smarty_template_dir'] = '../../views';
 $container['smarty_compile_dir'] = sys_get_temp_dir();
 // mongodb collections
 $container['dbcoll'] = array(
